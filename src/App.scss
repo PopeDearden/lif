@@ -1,0 +1,869 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+// ::-webkit-scrollbar {
+// width: 0px; 
+// background: transparent; 
+// }
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+$normal-margin: 25px;
+$small-margin: 10px;
+$Huge-font: 50px;
+$Large-Font: 30px;
+$Heading-Font: 25px;
+$Body-Font: 20px;
+$Dark-Teal: #095F79;
+$Green: #4A6C2F;
+$Steel: #2E93B1;
+$Orange: #ff7722;
+
+.App{
+  b{
+    color: $Orange;
+  }
+  h1,h2,h3,h4,h5,h6{
+    font-family: 'Abel', sans-serif;
+    line-height: 1.25;
+  }
+  p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: $Body-Font;
+  }
+  max-width: 100vw;
+  max-width: 100vw;
+  overflow: hidden;
+}
+$Hero-Image: 'https://cdn.shopify.com/s/files/1/0040/3786/9638/files/man_looking_into_the_light_cropped.jpg?v=1610400629';
+// $Hero-Image: 'https://cdn.shopify.com/s/files/1/0040/3786/9638/files/NXL_7927.jpg?v=1592607859';
+@keyframes titleAnimation {
+  0% {
+    opacity: 0%;
+  transform: translateY(20px);
+  }
+  100% {
+transform: translateY(0px);
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    // opacity: 0%;
+  transform: translateX(-20px);
+  }
+  100% {
+transform: translateX(0px);
+  }
+}
+#highlight{
+  color: $Orange;
+}
+#highlight2{
+  color: $Dark-Teal;
+}
+.MobileMenu{
+  display: none;
+}
+.Column{
+  display: flex;
+  flex-direction: column;
+}
+.Row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  min-width: 100vw;
+  max-width: 100vw;
+  flex-wrap: wrap;
+}
+.Row2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-width: 100vw;
+  max-width: 100vw;
+  flex-wrap: wrap;
+}
+.Hero{
+  background-image: url($Hero-Image);
+  background-position: center left;
+  min-width: 100vw;
+  max-width: 100vw;
+  min-height: 86vh;
+  overflow: hidden;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  // align-items: center;
+}
+.HeroAction{
+  color:white;
+  width: auto;
+  max-width: 600px;
+  height: auto;
+  margin-right: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2{
+    text-align: center;
+    line-height: 1.3;
+    font-size: $Huge-font;
+    margin: $normal-margin;
+  }
+  background-image: linear-gradient(to top left, #2e92b1a2, #095f7998)
+}
+.DonateButton{
+  color: white;
+  background-color: $Orange;
+  border-radius: 20px;
+  font-size: $Large-Font;
+  transition: all .15s ease-in-out;
+  border: solid 4px transparent;
+  cursor: pointer;
+  h2{
+    font-size: $Large-Font;
+    text-align: center;
+    padding: $small-margin
+  }
+  margin-bottom: $normal-margin;
+}
+.DonateButton:hover{
+  transform: scale(1.05);
+  color: $Orange;
+  background-color: white;
+  border: solid 4px;
+}
+.LearnButton{
+  color: white;
+  background-color: $Dark-Teal;
+  border-radius: 20px;
+  font-size: $Large-Font;
+  transition: all .15s ease-in-out;
+  border: solid 4px transparent;
+  cursor: pointer;
+  h2{
+    font-size: $Large-Font;
+    text-align: center;
+    padding: $small-margin;
+    outline: none;
+  }
+  margin-bottom: $normal-margin;
+}
+.LearnButton:hover{
+  transform: scale(1.05);
+  color: $Dark-Teal;
+  background-color: white;
+  border: solid 4px;
+}
+.LogoBox{
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  transition: all .5s ease-in-out;
+}
+// .LogoBox:hover{
+//   color: $Orange;
+// }
+.Menu{
+  font-size: 25px;
+  display: flex;
+  width: auto;
+  align-items: center;
+  h2{
+    margin-right: $normal-margin;
+  }
+}
+.NavButton{
+  margin-right: $normal-margin;
+  cursor: pointer;
+  h2{
+    width: auto;
+    text-align: center;
+    border-bottom: solid 2px transparent;
+    transition: all .15s ease-in-out;
+    padding-bottom: 2px;
+  }
+  h2:hover{
+    border-bottom: solid 2px $Orange;
+  }
+}
+.BigDonate{
+  background-color: $Orange;
+  border: solid 2px transparent;
+  border-radius: 20px;
+  padding: 10px;
+  margin-right: $normal-margin;
+  transition: .15s ease-in-out;
+  cursor: pointer;
+  h2{
+    font-size: 30px;
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+}
+.BigDonate:hover{
+transform: scale(1.05);
+h2{
+  color: $Orange;
+}
+background-color: white;
+border: solid 2px $Orange;
+}
+.NavBar {
+  min-width: 100vw;
+  max-width: 100vw;
+  overflow: hidden;
+  background-color: white;
+  min-height: 100px;
+  color: $Dark-Teal;
+  display: flex;
+  justify-content: space-between;
+  img{
+    margin-top: $small-margin;
+    margin-bottom: $small-margin;
+    height: 80px;
+    margin-left: $normal-margin;
+    animation: .5s ease-in-out titleAnimation;
+    cursor: pointer;
+    transition: .15s ease-in-out all;
+  }
+  img:hover{
+    transform: scale(1.05);
+  }
+  h1{
+    margin-left:$normal-margin;
+    font-size: 30px;
+    animation: .5s ease-in-out titleAnimation;
+    border-left: solid 2px;
+    padding-left: $small-margin;
+  }
+}
+.Mission{
+  max-width: 100vw;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+color: $Dark-Teal;
+  // background-color: white;
+  // background-image: linear-gradient(to bottom, $Orange, White);
+  animation: .5s ease-in-out slideInLeft;
+  margin-bottom: $normal-margin;
+}
+#BubbleImg{
+  width: 250px;
+  // border-radius: 50%;
+  border: solid 10px #142a5a;
+  margin: $normal-margin;
+}
+#BubbleImgTwo{
+  width: 250px;
+  // border-radius: 50%;
+  border: solid 10px 
+  #f0af73;
+  margin: $normal-margin;
+}
+#BubbleImgThree{
+  width: 250px;
+  // border-radius: 50%;
+  border: solid 10px 
+  #08a6ab;
+  margin: $normal-margin;
+}
+.Bubble{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 325px;
+  min-height: 550px;
+  text-align: center;
+  margin: $small-margin;
+}
+.TextBox{
+  width: auto;
+  h2{
+    font-size: $Large-Font;
+  }
+  margin-bottom: $small-margin;
+}
+.Arrow{
+  // display: none;
+  min-width: 75px;
+  min-height: 400px;
+  height: 100%;
+  background-image: url('https://cdn.shopify.com/s/files/1/0040/3786/9638/files/arrow.png?v=1610164283');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.Arrow2{
+  // display: none;
+  min-width: 75px;
+  min-height: 400px;
+  height: 100%;
+  background-image: url('https://cdn.shopify.com/s/files/1/0040/3786/9638/files/arrow.png?v=1610164283');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: $normal-margin;
+  margin-right: $normal-margin;
+}
+.Solution{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  min-height: 500px;
+  min-width: 100vw;
+  background-color: $Dark-Teal;
+  h1{
+    font-size: $Huge-font;
+    line-height: 1.6;
+    max-width: 100%;
+    text-align: center;
+  }
+  h2{
+    font-size: $Heading-Font;
+    line-height: 1.6;
+    max-width: 100%;
+    text-align: center;
+  }
+  .DonateButton{
+    width: 200px;
+  }
+}
+.Card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 500px;
+  min-width: 325px;
+  max-width: 325px;
+  background-color: white;
+  margin-bottom: $normal-margin;
+  margin-top: $normal-margin;
+  transition: all .1s ease-in-out;
+  h2{
+    font-size: $Large-Font;
+    width: 100%;
+    color: white;
+    background-color: $Steel;
+    background-color: $Orange;
+    padding-top: $small-margin;
+    padding-bottom: $small-margin;
+    text-align: center;
+  }
+  h3{
+    display: none;
+  }
+  p{
+    color: $Dark-Teal;
+    padding: $small-margin;
+    font-size: $Heading-Font;
+    text-align: center;
+  }
+  img{
+    width: 325px;
+  }
+}
+.Card:hover{
+  cursor: pointer;
+  transform: scale(1.03);
+  box-shadow: 5px 8px 13px 8px rgba(255,255,255,0.53);
+}
+.Title{
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2{
+    font-size: $Huge-font;
+    text-align: center;
+    margin-top: $normal-margin;
+  }
+  h3{
+    max-width: 50vw;
+    font-size: $Large-Font;
+    text-align: center;
+    margin-bottom: $normal-margin;
+  }
+}
+.Impact{
+  display: flex;
+  flex-direction: column;
+  color: $Dark-Teal;
+}
+.Contact{
+  background-color: $Dark-Teal;
+  color: white;
+  height: 800px;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  p{
+    text-align: center;
+    line-height: 1.2;
+    font-size: $Body-Font;
+    margin-top: $normal-margin;
+    margin-bottom: $normal-margin;
+
+  }
+}
+.GoodAlways{
+  color: white;
+  background-color: $Steel;
+
+    max-width: 100vw;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    flex-wrap: wrap;
+    // background-color: white;
+    // background-image: linear-gradient(to bottom, $Orange, White);
+    animation: .5s ease-in-out slideInLeft;
+    margin-bottom: $normal-margin;
+  .Bubble{
+    justify-content: space-between;
+  }
+}
+#map{
+  width: 50%;
+}
+.More{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+
+@mixin mq-xs {
+  @media (min-width: 320px) {
+    @content;
+  }
+}
+
+@mixin mq-sm {
+  @media (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin mq-md {
+  @media (min-width: 720px) {
+    @content;
+  }
+}
+
+@mixin mq-lg {
+  @media (min-width: 1000px) {
+    @content;
+  }
+}
+
+$background: #f7f7f7;
+$box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
+$border: 1px solid rgba(191, 191, 191, 0.4);
+$items: 5;
+$rows: ceil($items/2);
+
+/* Card sizing */
+
+$card-height: 650px;
+$card-width: 450px;
+$inner-margin: 15px;
+$number-size: 35px;
+$stagger: 180px;
+$outer-margin: 90px;
+$marker-size: 9px;
+
+/* Colors */
+
+$steps: #46b8e9;
+$colors: $Dark-Teal,
+$Steel,
+$Green,
+$Orange;
+$timeline: #bdbdbd;
+
+/* Calculations */
+
+$container-height: $rows * ($card-height + $outer-margin) + $stagger;
+$container-width: $card-width*2 + $outer-margin*3;
+$head-height: $number-size + 50;
+$body-height: $card-height - $head-height;
+$marker-dist: $card-width + $outer-margin/2 - $marker-size/2;
+
+/* Placeholders */
+
+@include mq-lg {
+  %arrow {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+  }
+  %marker {
+    position: absolute;
+    content: "";
+    width: $marker-size;
+    height: $marker-size;
+    background-color: $timeline;
+    border-radius: $marker-size;
+    box-shadow: 0px 0px 2px 8px $background;
+  }
+}
+
+
+/* Some Cool Stuff */
+
+$counter: $items - $rows + 2;
+@for $i from 1 through $rows {
+  .demo-card:nth-child(#{$i*2-1})   { order: $i }
+  .demo-card:nth-child(#{$i*2})     { order: $counter }
+  $counter: $counter + 1;
+}
+
+/* Border Box */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Fonts */
+
+// body {
+//   font-family: Roboto;
+// }
+
+#timeline {
+  padding: 100px 0;
+  background: $background;
+  border-top: $border;
+  border-bottom: $border;
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 200;
+    margin-bottom: 20px;
+  }
+  p.leader {
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 45px;
+  }
+  .demo-card-wrapper {
+    position: relative;
+    margin: auto;
+    @include mq-lg {
+      display: flex;
+      flex-flow: column wrap;
+      width: $container-width;
+      height: $container-height;
+      margin: 0 auto;
+    }
+    &::after {
+      z-index: 1;
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      border-left: $border;
+      @include mq-lg {
+        border-left: 1px solid $timeline;
+      }
+    }
+  }
+  .demo-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto 80px;
+    max-width: 94%;
+    z-index: 2;
+    @include mq-sm {
+      max-width: 60%;
+      box-shadow: $box-shadow;
+    }
+    @include mq-md {
+      max-width: 40%;
+    }
+    @include mq-lg {
+      max-width: $card-width;
+      height: $card-height;
+      margin: $outer-margin;
+      margin-top: $outer-margin/2;
+      margin-bottom: $outer-margin/2;
+      &:nth-child(odd) {
+        margin-right: $outer-margin/2;
+        .head::after {
+          @extend %arrow;
+          border-left-width: 15px;
+          border-left-style: solid;
+          left: 100%;
+        }
+        .head::before {
+          @extend %marker;
+          left: $marker-dist + 1;
+        }
+      }
+      &:nth-child(even) {
+        margin-left: $outer-margin/2;
+        .head::after {
+          @extend %arrow;
+          border-right-width: 15px;
+          border-right-style: solid;
+          right: 100%;
+        }
+        .head::before {
+          @extend %marker;
+          right: $marker-dist - 1;
+        }
+      }
+      &:nth-child(2) {
+        margin-top: $stagger;
+      }
+    }
+    .head {
+      position: relative;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      font-weight: 400;
+      .number-box {
+        display: inline;
+        float: left;
+        margin: $inner-margin;
+        padding: 10px;
+        font-size: $Heading-Font;
+        line-height: $number-size;
+        font-weight: 600;
+        background: rgba(0, 0, 0, 0.17);
+      }
+      h2 {
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        font-weight: inherit;
+        letter-spacing: 2px;
+        margin: 0;
+        padding-bottom: 6px;
+        line-height: 1rem;
+        @include mq-sm {
+          font-size: 165%;
+          line-height: 1;
+        }
+        span {
+          display: block;
+          font-size: 0.6rem;
+          margin: 0;
+          margin-bottom: 4px;
+          @include mq-sm {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+    .body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: #fff;
+      border: $border;
+      border-top: 0;
+      padding: $inner-margin;
+      @include mq-lg {
+        height: $body-height;
+      }
+      p {
+        font-size: $Body-Font;
+        line-height: 1.2;
+        // margin-bottom: $inner-margin;
+      }
+      ul {
+        font-size: 18px;
+        line-height: 1.2;
+        margin-bottom: $inner-margin;
+        padding-left: $normal-margin;
+      }
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+    @for $i from 1 through $items {
+      &--step#{$i} {
+        $color: nth($colors, ((($i - 1) % 4) + 1));
+        background-color: $color;
+        .head::after {
+          border-color: $color;
+        }
+      }
+    }
+  }
+}
+}
+.TheWayHolder{
+  display: flex;
+  justify-content: center;
+  background-color: #f7f7f7;
+  color:$Dark-Teal;
+}
+.TheWay{
+  h2{
+    margin-bottom: $normal-margin;
+  }
+  max-width: 75vw;
+ display: flex;
+//  flex-direction: column;
+flex-wrap: wrap;
+ justify-content: space-around;
+ align-items: center;
+}
+
+.WayCard{
+  padding: $small-margin;
+  min-width: 400px;
+  max-width: 400px;
+  min-height: 250px;
+  background-color: $Dark-Teal;
+  border: solid 4px #05303d;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: $normal-margin;
+  h2{
+    font-size: $Heading-Font;
+    border-bottom: solid 2px;
+    margin-bottom: $small-margin;
+
+  }
+  p{
+    font-size: $Body-Font;
+    line-height: 1.2;
+  }
+  img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid 5px white;
+    margin: $normal-margin;
+  }
+  .DonateButton{
+    background-color: black;
+    opacity: 15%;
+    text-align: center;
+    padding: $small-margin;
+  }
+  transition: all .1s ease-in-out
+}
+.WayCard:hover{
+  transform: scale(1.01);
+  cursor: pointer;
+  .DonateButton{
+    background-color: $Orange;
+    opacity: 100%;
+    color: white;
+  }
+  box-shadow: 5px 4px 5px 0px rgba(5,48,61,0.61);
+}
