@@ -21,7 +21,7 @@ function Hero() {
                                 <li>Directly improved the lives of 500+ people and improving the lives of 1000’s more; through increased trade and more consistent income earning opportunities.</li>
                                 <li>Children attending schools in their own villages – Better family nutrition – Improved living conditions.</li>
                             </ul>
-                            <img src="http://placehold.it/1000x500" alt="Graphic" />
+                            <img src="https://cdn.shopify.com/s/files/1/0040/3786/9638/files/lif_journey_rafa.jpg?v=1610501339" alt="Graphic" />
                         </div>
                     </div>
 
@@ -41,7 +41,7 @@ function Hero() {
                                 <li>Improved Self Esteem.</li>
                                 <li>Increase in Personal Education.</li>
                             </ul>
-                            <img src="http://placehold.it/1000x500" alt="Graphic" />
+                            <img src="https://cdn.shopify.com/s/files/1/0040/3786/9638/files/lif_journey_weaving.jpg?v=1610501339" alt="Graphic" />
                         </div>
                     </div>
 
@@ -62,7 +62,7 @@ function Hero() {
                               <li>Business to Business.</li>
                               <li>Increase in Light-It Forward Foundation’s productivity and acceptability in Guatemala.</li>
                           </ul>
-                            <img src="http://placehold.it/1000x500" alt="Graphic" />
+                            <img src="https://cdn.shopify.com/s/files/1/0040/3786/9638/files/hands_together.jpg?v=1610501653" alt="Graphic" />
                         </div>
                     </div>
 
@@ -80,7 +80,7 @@ function Hero() {
                                 <li>Legal, banking and accounting advantages.</li>
                                 <li>Distribution of earnings and donations to non-profit organizations working in Central America.</li>
                             </ul>
-                            <img src="http://placehold.it/1000x500" alt="Graphic" />
+                            <img src="https://cdn.shopify.com/s/files/1/0040/3786/9638/files/flag.jpg?v=1610501524" alt="Graphic" />
                         </div>
                     </div>
 
@@ -92,8 +92,16 @@ function Hero() {
                             <h2><span class="small">Co-Owners of</span>Good Always, LLC</h2>
                         </div>
                         <div class="body">
-                            <p>Light-It-Forward owns Good Always, LLC with its sister organization Stones of Light Education Foundation.
-                                This allows for Light-It-Forward to sell it's products online at goodalways.com and use the profits for humanitarian and job creation projects!
+                            <p>Light-It-Forward owns Good Always, LLC with its sister organization 
+                                
+                            <a href="https://stonesoflight.org" rel="noreferrer" target="_blank">
+                               <p> Stones of Light Education Foundation.</p>
+                                </a>
+                                This allows for Light-It-Forward to sell it's products online at  
+                            <a href="https://goodalways.com" rel="noreferrer" target="_blank">
+                                 <p>goodalways.com </p>
+                                </a>
+                                 and use the profits for humanitarian and job creation projects!
                             </p>
                             <p><b>Benefits</b></p>
                             <ul>
@@ -101,7 +109,9 @@ function Hero() {
                                 <li>Building awareness of our artisans and products.</li>
                                 <li>Creating a brand focused on helping impoverished people!</li>
                             </ul>
-                            <img src="http://placehold.it/1000x500" alt="Graphic" />
+                            <a href="https://goodalways.com" rel="noreferrer" target="_blank">
+                            <img id="Grow" src="https://cdn.shopify.com/s/files/1/0040/3786/9638/files/good_always_lake.jpg?v=1610501829" alt="Graphic" />
+                            </a>
                         </div>
                     </div>
 

@@ -24,6 +24,44 @@ export default function Nav() {
                             <h2>What We Do</h2>
                         </div>
                     </Link>
+                    <Link
+                        to="Solution"
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >
+                        <div className="NavButton">
+                            <h2>How You Can Help</h2>
+                        </div>
+                    </Link>
+                 
+                    <Link
+                        to="TheWayHolder"
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >
+                        <div className="NavButton">
+                            <h2>How It Works</h2>
+                        </div>
+                    </Link>
+                    <Link
+                        to="More"
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >
+                        <div className="NavButton">
+                            <h2>Our Journey</h2>
+                        </div>
+                    </Link>
+                 
                   
                
                     <a href="https://checkout.square.site/merchant/WFJDHKBHCFDKF/checkout/3NBHFIZQ4XMHWIJV65M25T54" target="_blank" rel="noreferrer">

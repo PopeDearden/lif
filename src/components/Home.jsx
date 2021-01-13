@@ -5,22 +5,19 @@ import Mission from './sections/Mission'
 import More from './sections/More'
 import Help from './sections/Help'
 import TheWay from './sections/TheWay'
-// import Mission from './sections/Mission'
+import Contact from './sections/Contact'
 
-// import Solution from './sections/Solution'
-// import Impact from './sections/Impact'
-// import Contact from './sections/Contact'
-// import GoodAlways from './GoodAlways'
 
 function Home() {
   return (
     <div className="App">
       <Nav />
         <Hero />
-        <Mission/>
-        <Help />
-        <More />
-        <TheWay />
+        <Mission id="Mission"/>
+        <Help id="Help"/>
+        <TheWay id="TheWay" />
+        <More id="More"/>
+        <Contact id="Contact"/>
 
     </div>
   );

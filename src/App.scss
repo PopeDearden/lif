@@ -806,8 +806,14 @@ $counter: $items - $rows + 2;
 .TheWayHolder{
   display: flex;
   justify-content: center;
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   color:$Dark-Teal;
+}
+#Grow{
+  transition: all .15s ease-in-out;
+}
+#Grow:hover{
+transform: scale(1.01)
 }
 .TheWay{
   h2{
@@ -858,12 +864,12 @@ flex-wrap: wrap;
   transition: all .1s ease-in-out
 }
 .WayCard:hover{
-  transform: scale(1.01);
   cursor: pointer;
   .DonateButton{
     background-color: $Orange;
     opacity: 100%;
     color: white;
   }
+  transform: scale(1.01);
   box-shadow: 5px 4px 5px 0px rgba(5,48,61,0.61);
 }

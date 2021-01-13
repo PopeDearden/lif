@@ -1,9 +1,12 @@
 import '../../App.scss'
+import Zoom from 'react-reveal/Zoom';
 
 function TheWay() {
   return (
     <div className="TheWayHolder">
       <div className="TheWay">
+        <Zoom>
+
       <div className="Title">
         <h2>The Light-It-Forward Way</h2>
       </div>
@@ -93,6 +96,7 @@ You Keep All The Humanitarian and Social Capital.
           </div>
         </div>
 
+        </Zoom>
       </div>
     </div>
   );

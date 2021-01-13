@@ -45,9 +45,12 @@ function Mission() {
         </div>
         <div className="Bubble">
           <div className="TextBox">
-            <h2>We market and sell these products directly and online through Good Always. (goodalways.com)</h2>
+            <h2>We market and sell these products directly and online through Good Always. <a href="https://goodalways.com" target="_blank" rel="noreferrer">
+              (goodalways.com)
+              </a>
+              </h2>
           </div>
-          <img id="BubbleImgThree" src="https://cdn.shopify.com/s/files/1/0040/3786/9638/files/NXL_7906.png?v=1610166307">
+          <img id="BubbleImg" src="https://cdn.shopify.com/s/files/1/0040/3786/9638/files/Artisan_products_home.jpg?v=1609485248">
 
           </img>
           {/* <a href="https://checkout.square.site/merchant/WFJDHKBHCFDKF/checkout/3NBHFIZQ4XMHWIJV65M25T54" target="_blank" rel="noreferrer">
