@@ -109,3 +109,13 @@ $Orange: #E67531;
   align-items: center;
  }   
 }
+.WayCard{
+  .DonateButton{
+    background-color: white;
+    color: $Orange;
+    opacity: 100%;
+    text-align: center;
+    padding: $small-margin;
+    z-index: 1;
+  }
+}
