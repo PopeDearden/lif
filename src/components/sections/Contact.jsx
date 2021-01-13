@@ -9,7 +9,7 @@ function Contact() {
           <h2>Scott & Adriane Kim Hosking</h2>
           <p>Call or Text<br></br>
           435-851-4989</p>
-          <p>Stones of Light <br></br>Education
+          <p>Light-It-Forward<br></br>
 Foundation<br></br>
 62 East 200 South<br></br>
 Ephraim, Utah 84627</p>

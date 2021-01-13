@@ -64,7 +64,7 @@ export default function Nav() {
                  
                   
                
-                    <a href="https://checkout.square.site/merchant/WFJDHKBHCFDKF/checkout/3NBHFIZQ4XMHWIJV65M25T54" target="_blank" rel="noreferrer">
+                    <a href="https://checkout.square.site/merchant/HCYYCPA084J1Z/checkout/5E7H3JQS2HCNRO2FMWAIPRVM" target="_blank" rel="noreferrer">
                         <div className="BigDonate">
                             <h2>Donate</h2>
                         </div>
@@ -80,11 +80,11 @@ export default function Nav() {
                         offset={0}
                         duration={500}
                     >
-                <div className="MobileNav">
-                  <h2>What We Do</h2>
-                </div>
-                </Link>
-                <Link
+                        <div className="MobileNav">
+                            <h2>What We Do</h2>
+                        </div>
+                    </Link>
+                    <Link
                         to="Solution"
                         activeClass="active"
                         spy={true}
@@ -92,46 +92,35 @@ export default function Nav() {
                         offset={0}
                         duration={500}
                     >
-                <div className="MobileNav">
-                    <h2>How You Can Help</h2>
-                </div>
-                </Link>
-                <Link
-                        to="Impact"
+                        <div className="MobileNav">
+                            <h2>How You Can Help</h2>
+                        </div>
+                    </Link>
+                 
+                    <Link
+                        to="TheWayHolder"
                         activeClass="active"
                         spy={true}
                         smooth={true}
                         offset={0}
                         duration={500}
                     >
-                <div className="MobileNav">
-                    <h2>Our Progress</h2>
-                </div>
-                </Link>
-                <Link
-                        to="GoodAlways"
+                        <div className="MobileNav">
+                            <h2>How It Works</h2>
+                        </div>
+                    </Link>
+                    <Link
+                        to="More"
                         activeClass="active"
                         spy={true}
                         smooth={true}
                         offset={0}
                         duration={500}
                     >
-                <div className="MobileNav">
-                    <h2>Good Always</h2>
-                </div>
-                </Link>
-                <Link
-                        to="Contact"
-                        activeClass="active"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={500}
-                    >
-                <div className="MobileNav">
-                    <h2>Contact Us</h2>
-                </div>
-                </Link>
+                        <div className="MobileNav">
+                            <h2>Our Journey</h2>
+                        </div>
+                    </Link>
                 
                 
             </div>
