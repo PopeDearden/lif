@@ -18,7 +18,7 @@ function TheWay() {
           <div className="Column">
           <img className="WayImg" src="https://cdn.shopify.com/s/files/1/0040/3786/9638/files/step_1.png?v=1610475005" alt="" />
           <a target="_blank" href="https://checkout.square.site/merchant/HCYYCPA084J1Z/checkout/5E7H3JQS2HCNRO2FMWAIPRVM" rel="nonreferrer">
-          <div className="DonateButton">
+          <div className="DonateButton2">
             Donate
           </div>
           </a>
@@ -35,7 +35,7 @@ You Keep All The Humanitarian and Social Capital.
           <div className="Column">
           <img className="WayImg" src="https://cdn.shopify.com/s/files/1/0040/3786/9638/files/step_2.png?v=1610475005" alt="" />
           <a target="_blank" href="https://checkout.square.site/merchant/HCYYCPA084J1Z/checkout/5E7H3JQS2HCNRO2FMWAIPRVM" rel="nonreferrer">
-          <div className="DonateButton">
+          <div className="DonateButton2">
             Donate
           </div>
           </a>
@@ -49,7 +49,7 @@ You Keep All The Humanitarian and Social Capital.
           <div className="Column">
           <img className="WayImg" src="https://cdn.shopify.com/s/files/1/0040/3786/9638/files/step_3.png?v=1610475005" alt="" />
           <a target="_blank" href="https://checkout.square.site/merchant/HCYYCPA084J1Z/checkout/5E7H3JQS2HCNRO2FMWAIPRVM" rel="nonreferrer">
-          <div className="DonateButton">
+          <div className="DonateButton2">
             Donate
           </div>
           </a>
@@ -62,7 +62,7 @@ You Keep All The Humanitarian and Social Capital.
           <div className="Column">
           <img className="WayImg" src="https://cdn.shopify.com/s/files/1/0040/3786/9638/files/step_4.png?v=1610475005" alt="" />
           <a target="_blank" href="https://checkout.square.site/merchant/HCYYCPA084J1Z/checkout/5E7H3JQS2HCNRO2FMWAIPRVM" rel="nonreferrer">
-          <div className="DonateButton">
+          <div className="DonateButton2">
             Donate
           </div>
           </a>
@@ -75,7 +75,7 @@ You Keep All The Humanitarian and Social Capital.
           <div className="Column">
           <img className="WayImg" src="https://cdn.shopify.com/s/files/1/0040/3786/9638/files/step_5.png?v=1610475005" alt="" />
           <a target="_blank" href="https://checkout.square.site/merchant/HCYYCPA084J1Z/checkout/5E7H3JQS2HCNRO2FMWAIPRVM" rel="nonreferrer">
-          <div className="DonateButton">
+          <div className="DonateButton2">
             Donate
           </div>
           </a>
@@ -89,7 +89,7 @@ You Keep All The Humanitarian and Social Capital.
           <div className="Column">
           <img className="WayImg" src="https://cdn.shopify.com/s/files/1/0040/3786/9638/files/step_6.png?v=1610475005" alt="" />
           <a target="_blank" href="https://checkout.square.site/merchant/HCYYCPA084J1Z/checkout/5E7H3JQS2HCNRO2FMWAIPRVM" rel="nonreferrer">
-          <div className="DonateButton">
+          <div className="DonateButton2">
             Donate
           </div>
           </a>
